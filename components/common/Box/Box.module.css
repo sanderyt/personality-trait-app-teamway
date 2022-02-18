@@ -1,0 +1,4 @@
+.box {
+    @apply flex flex-col justify-center items-center rounded-md p-3 m-4 bg-white;
+    box-shadow: 0 3px 15px #ccc;
+}
