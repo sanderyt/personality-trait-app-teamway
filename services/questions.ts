@@ -17,5 +17,15 @@ export const getQuestion = (id: number): Promise<QuestionResponse> => {
  * @returns The data of question
  */
 export const postQuestion = (score: number): void => {
-  //post to localstorage here
+  // Normally there would be a back-end to post to, but there is no database in this mock API
+  // So I am using localStorage to keep track of the score as a mock
+  const previousScore = localStorage.getItem("testScore");
+
+  if (!previousScore) {
+    return localStorage.setItem("testScore", score.toString());
+  }
+
+  const newScore = Number(previousScore) + score;
+
+  return localStorage.setItem("testScore", newScore.toString());
 };

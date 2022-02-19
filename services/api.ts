@@ -30,8 +30,7 @@ export const doRequest = async (config: any) => {
 
   try {
     const response = await fetch(url, reqConfig);
-    const data = response.json();
-    return data;
+    return response.json();
   } catch (error) {
     console.log(error);
   }

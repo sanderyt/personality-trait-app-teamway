@@ -15,14 +15,14 @@ const Home: NextPage = () => {
   return (
     <div className="container mx-auto">
       <Box>
-        <h1 className="text-xl font-bold">
-          Welcome to the Teamway personality test
-        </h1>
-        <p>
-          You will be asked 5 personality questions. After answering these
-          questions, you will receive an answer either: Introvert of Extravert
-        </p>
         <div>
+          <h1 className="text-xl font-bold">
+            Welcome to the Teamway personality test
+          </h1>
+          <p>
+            You will be asked 5 personality questions. After answering these
+            questions, you will receive an answer either: Introvert of Extravert
+          </p>
           <Button variant={ButtonVariant.Primary} handleClick={onStart}>
             Start test
           </Button>

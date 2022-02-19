@@ -2,6 +2,7 @@ import React, { FC } from "react";
 import classNames from "classnames/bind";
 
 import styles from "./Button.module.css";
+
 import { ButtonSizes, ButtonVariant } from "./enums";
 
 const cx = classNames.bind(styles);
@@ -10,8 +11,7 @@ export interface ButtonProps {
   variant: ButtonVariant;
   size?: ButtonSizes;
   children: string;
-  type?: "button" | "submit" | "reset";
-  isLoading?: boolean;
+  type?: "button" | "submit";
   handleClick?: () => void;
 }
 

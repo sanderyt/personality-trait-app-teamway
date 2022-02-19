@@ -6,8 +6,8 @@ interface BoxProps {
   children: ReactNode;
 }
 
-const Box: FC<BoxProps> = ({ children }) => {
-  return <div className={styles.box}>{children}</div>;
-};
+const Box: FC<BoxProps> = ({ children }) => (
+  <div className={styles.box}>{children}</div>
+);
 
 export default Box;

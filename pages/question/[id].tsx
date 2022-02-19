@@ -1,8 +1,9 @@
 import type { NextPage } from "next";
 import { GetServerSideProps } from "next";
 
-import { MainQuestion } from "@components/features/MainQuestion";
 import { getQuestion } from "@services/questions";
+
+import MainQuestion from "@components/features/MainQuestion";
 
 const Question: NextPage = ({ question }) => {
   const { mainQuestion, id, answers } = question;
@@ -17,6 +18,12 @@ const Question: NextPage = ({ question }) => {
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const { id } = context.query;
   const { question } = await getQuestion(Number(id));
+
+  if (!question) {
+    context.res.setHeader("location", "/finished");
+    context.res.statusCode = 302;
+    context.res.end();
+  }
 
   return {
     props: {
