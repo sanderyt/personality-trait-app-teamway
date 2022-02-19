@@ -1,5 +1,7 @@
 ## Personality test app for Teamway.io
 
+Deployed version is here: (https://nextjs.org/docs/api-routes/introduction)
+
 ### Front-end
 
 - TypeScript

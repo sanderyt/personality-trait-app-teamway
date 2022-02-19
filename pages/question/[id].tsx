@@ -2,10 +2,15 @@ import type { NextPage } from "next";
 import { GetServerSideProps } from "next";
 
 import { getQuestion } from "@services/questions";
+import { Question } from "types";
 
 import MainQuestion from "@components/features/MainQuestion";
 
-const Question: NextPage = ({ question }) => {
+interface Props {
+  question: Question;
+}
+
+const Question: NextPage<Props> = ({ question }) => {
   const { mainQuestion, id, answers } = question;
 
   return (
