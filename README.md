@@ -6,8 +6,7 @@ Deployed app: https://personality-trait-app-teamway-9zpk62o14-sanderyt.vercel.ap
 
 - TypeScript
 - React (Next.js)
-- Tailwind (with CSS modules)
-- React Testing Library for unit testing
+- Tailwind (with CSS modules & Mobile-First approach)
 - Yarn as package manager
 
 ### Back-end
