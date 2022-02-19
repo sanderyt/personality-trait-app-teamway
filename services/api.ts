@@ -1,4 +1,5 @@
-const API_URL = "http://localhost:3000/api";
+const API_URL =
+  "https://personality-trait-app-teamway-23tovildc-sanderyt.vercel.app/api";
 
 const defaultOptions = {
   authenticate: true,
