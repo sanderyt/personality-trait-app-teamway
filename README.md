@@ -1,13 +1,19 @@
 ## Personality test app for Teamway.io
 
-Welcome to my test project. I have been using the following stack:
+### Front-end
 
 - TypeScript
 - React (Next.js)
-- Tailwind (CSS modules)
+- Tailwind (with CSS modules)
 - React Testing Library for unit testing
 - Yarn as package manager
 
-```bash
-yarn dev
-```
+### Back-end
+
+For mocking a back-end I have been using the Next.js API routes. This enables developers to quickly create API endpoints within the same project. For more information about this:
+
+[Next.js API Routes Documentation](https://nextjs.org/docs/api-routes/introduction)
+
+To run the development server, please run:
+
+```yarn dev```
