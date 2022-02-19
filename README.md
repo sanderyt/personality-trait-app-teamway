@@ -1,6 +1,6 @@
 ## Personality test app for Teamway.io
 
-Deployed version is here: (https://nextjs.org/docs/api-routes/introduction)
+Deployed app: https://personality-trait-app-teamway-9zpk62o14-sanderyt.vercel.app/
 
 ### Front-end
 
